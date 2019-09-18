@@ -688,27 +688,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\OmniViscious\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Users\\Dillon Zetzer\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\OmniViscious\\source\\repos\\universityHospital\\universityHospital\\universityHospital.csproj",
+      "projectUniqueName": "C:\\CodeScrCtrl\\HosptialProject\\HospitalProject\\universityHospital\\universityHospital.csproj",
       "projectName": "universityHospital",
-      "projectPath": "C:\\Users\\OmniViscious\\source\\repos\\universityHospital\\universityHospital\\universityHospital.csproj",
-      "packagesPath": "C:\\Users\\OmniViscious\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\OmniViscious\\source\\repos\\universityHospital\\universityHospital\\obj\\",
+      "projectPath": "C:\\CodeScrCtrl\\HosptialProject\\HospitalProject\\universityHospital\\universityHospital.csproj",
+      "packagesPath": "C:\\Users\\Dillon Zetzer\\.nuget\\packages\\",
+      "outputPath": "C:\\CodeScrCtrl\\HosptialProject\\HospitalProject\\universityHospital\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\OmniViscious\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Dillon Zetzer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
