@@ -41,6 +41,7 @@ namespace universityHospital
             Console.WriteLine("Employee Paid : " + employee.isPaid);
             Console.WriteLine("*******************************\n");
             Console.WriteLine("<b> Return to menu");
+            Console.WriteLine("<p> Pay employee");
             if (employee is Doctor || employee is Nurse)
             {
                 Console.WriteLine("<c> Care for Patient");
@@ -53,6 +54,7 @@ namespace universityHospital
                 if (input.ToLower() == "d") employee.DrawBlood();
             }
             if (input.ToLower() == "b") inSelectMenu = false;
+            if (input.ToLower() == "p") employee.PayEmployee();
             Console.Clear();
         }
         public void CreateEmployees()

@@ -10,12 +10,15 @@ namespace universityHospital
         public int number { get; set; }
         public int salary { get; set; }
         public bool isPaid { get; set; }
-        void PayEmployee()
+        public void PayEmployee()
         {
             if(isPaid ==  false)
             {
+                Console.WriteLine(name + " has been paid " + salary);
                 this.isPaid = true;
             }
+            else Console.WriteLine(name + " has already been paid");
+            Console.ReadLine();
         }
         public virtual void CareForPatient()
         {
