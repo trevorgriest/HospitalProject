@@ -8,15 +8,19 @@ namespace universityHospital.Employees
     {
         int patients { get; set; }
 
-        public Nurse()
+        public Nurse(string Name, int Number)
         {
+            this.patients = 0;
+            base.number = Number;
+            base.name = Name;
+            base.isPaid = false;
             base.salary = 50000;
         }
-        public void CareForPatient()
+        public override void CareForPatient()
         {
 
         }
-        public void DrawBlood()
+        public override void DrawBlood()
         {
 
         }

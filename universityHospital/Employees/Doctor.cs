@@ -7,16 +7,20 @@ namespace universityHospital
     class Doctor : Employee
     {
         string specialty { get; set; }
-        public Doctor()
+        public Doctor(string Name, int Number, string Specialty)
         {
+            this.specialty = Specialty;
+            base.number = Number;
+            base.name = Name;
+            base.isPaid = false;
             base.salary = 90000;
         }
 
-        public void CareForPatient()
+        public override void CareForPatient()
         {
 
         }
-        public void DrawBlood()
+        public override void DrawBlood()
         {
 
         }

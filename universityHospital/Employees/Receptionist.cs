@@ -8,8 +8,12 @@ namespace universityHospital.Employees
     {
         bool isOnPhone { get; set; }
 
-        public Receptionist()
+        public Receptionist(string Name, int Number)
         {
+            this.isOnPhone = false;
+            base.number = Number;
+            base.name = Name;
+            base.isPaid = false;
             base.salary = 45000;
         }
     }
