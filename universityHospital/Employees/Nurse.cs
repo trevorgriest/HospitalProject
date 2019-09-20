@@ -6,7 +6,7 @@ namespace universityHospital.Employees
 {
     public class Nurse : Employee
     {
-        int patients { get; set; }
+        public int patients { get; set; }
 
         public Nurse(string Name, int Number)
         {

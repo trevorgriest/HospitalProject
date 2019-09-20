@@ -6,7 +6,7 @@ namespace universityHospital
 {
     public class Doctor : Employee
     {
-        string specialty { get; set; }
+        public string specialty { get; set; }
         public Doctor(string Name, int Number, string Specialty)
         {
             this.specialty = Specialty;

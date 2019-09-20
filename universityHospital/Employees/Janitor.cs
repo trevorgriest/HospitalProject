@@ -6,7 +6,7 @@ namespace universityHospital.Employees
 {
     public class Janitor : Employee
     {
-        bool isSweeping { get; set; }
+        public bool isSweeping { get; set; }
         public Janitor(string Name, int Number)
         {
             this.isSweeping = false;

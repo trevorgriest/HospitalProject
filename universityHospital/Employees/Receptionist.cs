@@ -6,7 +6,7 @@ namespace universityHospital.Employees
 {
     public class Receptionist : Employee
     {
-        bool isOnPhone { get; set; }
+         public bool isOnPhone { get; set; }
 
         public Receptionist(string Name, int Number)
         {
