@@ -7,6 +7,7 @@ namespace universityHospital
     {
         static void Main(string[] args)
         {
+            // Team name = Team Rocket
             string input;
             int inputInt;
             Employee selectedEmployee = null;
