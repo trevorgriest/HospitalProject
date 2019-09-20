@@ -4,7 +4,7 @@ using System.Text;
 
 namespace universityHospital.Employees
 {
-    class Janitor : Employee
+    public class Janitor : Employee
     {
         bool isSweeping { get; set; }
         public Janitor(string Name, int Number)

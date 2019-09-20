@@ -4,10 +4,10 @@ using System.Text;
 
 namespace universityHospital
 {
-    class Patient
+    public class Patient
     {
-        int health { get; set; }
-        int blood { get; set; }
+        public int health { get; set; }
+        public int blood { get; set; }
 
         public Patient()
         {

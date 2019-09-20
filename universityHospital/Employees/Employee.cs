@@ -4,7 +4,7 @@ using System.Text;
 
 namespace universityHospital
 {
-    class Employee
+    public class Employee
     {
         public string name { get; set; }
         public int number { get; set; }
@@ -18,13 +18,12 @@ namespace universityHospital
                 this.isPaid = true;
             }
             else Console.WriteLine(name + " has already been paid");
-            Console.ReadLine();
         }
-        public virtual void CareForPatient()
+        public virtual void CareForPatient(Patient patient)
         {
 
         }
-        public virtual void DrawBlood()
+        public virtual void DrawBlood(Patient patient)
         {
 
         }

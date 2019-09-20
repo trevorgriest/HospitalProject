@@ -13,7 +13,14 @@ namespace universityHospital
         {
             foreach(Employee employee in employeeList)
             {
+                string profession = null;
+                if (employee is Doctor) profession = "Doctor";
+                else if (employee is Nurse) profession = "Nurse";
+                else if (employee is Receptionist) profession = "Receptionist";
+                else if (employee is Janitor) profession = "Janitor";
+
                 Console.WriteLine("*******************************");
+                Console.WriteLine("Job Title : " + profession + "\n");
                 Console.WriteLine("Name : " + employee.name);
                 Console.WriteLine("Number : " + employee.number);
                 Console.WriteLine("Salary : " + employee.salary);
@@ -30,7 +37,7 @@ namespace universityHospital
             }
             return employeeMatch;
         }
-        public void DisplaySelectedEmployee(Employee employee)
+        public void DisplaySelectedEmployee(Employee employee, Patient patient)
         {
             bool inSelectMenu = true;
 
@@ -50,11 +57,12 @@ namespace universityHospital
             string input = Console.ReadLine();
             if (employee is Doctor || employee is Nurse)
             {
-                if (input.ToLower() == "c") employee.CareForPatient();
-                if (input.ToLower() == "d") employee.DrawBlood();
+                if (input.ToLower() == "c") employee.CareForPatient(patient);
+                if (input.ToLower() == "d") employee.DrawBlood(patient);
             }
             if (input.ToLower() == "b") inSelectMenu = false;
             if (input.ToLower() == "p") employee.PayEmployee();
+            Console.ReadLine();
             Console.Clear();
         }
         public void CreateEmployees()

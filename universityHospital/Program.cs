@@ -11,6 +11,7 @@ namespace universityHospital
             int inputInt;
             Employee selectedEmployee = null;
             Utility utility = new Utility();
+            Patient patient = new Patient();
             utility.CreateEmployees();
 
             while(true)
@@ -23,7 +24,7 @@ namespace universityHospital
                     Console.Clear();
                     selectedEmployee = utility.SelectEmployee(inputInt);
                     if (selectedEmployee == null) Console.WriteLine("There is no employee with this ID number");
-                    else utility.DisplaySelectedEmployee(selectedEmployee);
+                    else utility.DisplaySelectedEmployee(selectedEmployee, patient);
                 }
                 if (input.ToLower() == "view")
                 {

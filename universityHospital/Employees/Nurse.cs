@@ -4,7 +4,7 @@ using System.Text;
 
 namespace universityHospital.Employees
 {
-    class Nurse : Employee
+    public class Nurse : Employee
     {
         int patients { get; set; }
 
@@ -16,13 +16,15 @@ namespace universityHospital.Employees
             base.isPaid = false;
             base.salary = 50000;
         }
-        public override void CareForPatient()
+        public override void CareForPatient(Patient patient)
         {
-
+            patient.health++;
+            Console.WriteLine("Patient current health : " + patient.health);
         }
-        public override void DrawBlood()
+        public override void DrawBlood(Patient patient)
         {
-
+            patient.blood -= 2;
+            Console.WriteLine("Patient current blood level : " + patient.blood);
         }
     }
 }
